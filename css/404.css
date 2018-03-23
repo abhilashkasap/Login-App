@@ -1,0 +1,23 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('bg-03.png');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+
+a{
+    float: left;
+    font-size: 1.5vw;
+    padding-top: 10px;
+    padding-left: 10%;
+
+}

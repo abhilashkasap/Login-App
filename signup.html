@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sign Up</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/icon-font.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="/css/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body style="background-color: #666666;">
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form" action="/signup" method="POST">
+					<span class="login100-form-title p-b-43">
+						Register Here
+					</span>
+					
+					
+					<div class="wrap-input100" id='y' >
+						<input class="input100"  type="text" onchange="validateName(this);" name="fullname" required>
+						<span class="focus-input100"></span>
+						<span class="label-input100" id='x'>Full Name</span>
+					</div>
+
+                    <div class="wrap-input100" id='a'>
+						<input class="input100" type="password" id="password1" onchange="validatePassword(this);" name="password" required>
+						<span class="focus-input100"></span>
+						<span class="label-input100" id='b'>Password</span>
+                    </div>
+                    
+                    <div class="wrap-input100" id='c'>
+						<input class="input100" type="password" id="password2" onchange="matchPassword(this);" name="passwordCheck" required>
+						<span class="focus-input100"></span>
+						<span class="label-input100" id='d'>Confirm Password</span>
+                    </div>
+
+					<div class="wrap-input100" id='e'>
+						<input class="input100" type="text" onchange="validateEmail(this);" name="email" required id="em">
+						<span class="focus-input100"></span>
+						<span class="label-input100" id='f'>Email</span>
+					</div>
+			
+                    <div class="wrap-input100" id='g'>
+						<input class="input100" type="text" onchange="validatePhone(this);" name="phone" required>
+						<span class="focus-input100"></span>
+						<span class="label-input100" id='h'>Phone</span>
+                    </div>
+                    
+                    <div class="wrap-input100" id='i'>
+						<input class="input100" type="date" id='DOB' onchange="validateDOB(this);" name="dob" required>
+						<span class="focus-input100"></span>
+						<span class="label-input100" id='j'>Date of Birth</span>
+                    </div>
+                    
+					<div class="container-login100-form-btn" id="submit">
+						<button class="login100-form-btn">
+							Register
+						</button>
+					</div>
+
+					<div class="text-center p-t-46 p-b-20">
+						<span class="txt2">
+							or Sign up using
+						</span>
+					</div>
+
+					<div class="login100-form-social flex-c-m">
+						<a href="/login/facebook" class="login100-form-social-item flex-c-m bg2 m-r-5 btn btn-social-icon btn-facebook">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+
+						<a href="/login/google" class="login100-form-social-item flex-c-m bg2 m-r-5 btn btn-social-icon btn-google">
+							<i class="fa fa-google" aria-hidden="true"></i>
+						</a>
+					</div>
+
+					<div class="text-center p-t-46 p-b-20">
+						<span class="txt2">
+							<a href="/">Go back to login page</a>
+						</span>
+					</div>
+				</form>
+
+				<div class="login100-more" style="background-image: url('/css/bg-01.jpg');">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="script/validate.js"></script>
+
+</body>
+</html>
